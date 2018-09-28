@@ -118,9 +118,9 @@
 
 	<header class="header" id="header">
 		<div class="header_content text-center">
-			<h1 class="header_title">&laquo;Иллидиум 2&raquo;</h1>
-			<p class="header_desc">жилой комплекс в Твери</p>
-			<button type="button" href="#form_4" class="header_button section_button">Получить скидку</button>
+			<h1 class="header_title">Жилой комплекс &laquo;Иллидиум 2&raquo;</h1>
+			<p class="header_desc">квартиры с дизайнерским ремонтом и без</p>
+			<button type="button" href="#form_4" class="header_button section_button">Посмотреть ремонт</button>
 		</div>
 		<div class="header_arrow-down">
 			<img src="img/icons/icon_down.svg" alt="" class="header_arrow_img">
@@ -139,6 +139,26 @@
 						<h2 class="about_title section_title section_title-underline">О жилом комплексе</h2>
 						<p class="about_desc">ЖК Иллидиум 2 – один из активно строящихся комплексов, <br class="nl_desctop">расположенный в благоприятных природных условиях. <br class="nl_desctop">Дома возводятся по кирпично-монолитной технологии <br class="nl_desctop">строительства с учетом всех требований пожарной <br class="nl_desctop">безопасности, оснащены современными системами оповещения.</p>
 					</div>
+				</div>
+				<div id="lightgallery" class="lightgallery">
+					<a href="img/hall/hall_1.jpg">
+						<img src="img/hall/hall_1.jpg">
+					</a>
+					<a href="img/hall/hall_2.jpg">
+						<img src="img/hall/hall_2.jpg">
+					</a>
+					<a href="img/hall/hall_3.jpg">
+						<img src="img/hall/hall_3.jpg">
+					</a>
+					<a href="img/hall/hall_4.jpg">
+						<img src="img/hall/hall_4.jpg">
+					</a>
+					<a href="img/hall/hall_5.jpg">
+						<img src="img/hall/hall_5.jpg">
+					</a>
+					<a href="img/hall/hall_6.jpg">
+						<img src="img/hall/hall_6.jpg">
+					</a>					
 				</div>
 			</div>
 		</div>
@@ -173,8 +193,8 @@
 	</section>
 
 	<section class="discount text-center" id="discount">
-		<h2 class="discount_title section_title section_title-underline">Получите скидку</h2>
-		<p class="discount_desc">35 999 руб за 1 м². <br class="nl_mob">Осталось 3 квартиры.</p>
+		<h2 class="discount_title section_title section_title-underline">Квартиры от 1.5 млн рублей</h2>
+		<p class="discount_desc">Всего 5 квартир.</p>
 		<button href="#form_5" class="discount_button section_button">Оставить заявку</button>
 	</section>
 
@@ -262,13 +282,13 @@
 
 	<section class="plus" id="plus">
 		<div class="container">
-			<ul class="row plus_list">				
-				<li class="plus_item">Материнский капитал</li>						
-				<li class="plus_item">Ипотека</li>						
-				<li class="plus_item">Рассрочка 0%</li>						
-				<li class="plus_item">Скидка 2%</li>						
-				<li class="plus_item">Программа <br>без первоначального взноса</li>						
-				<li class="plus_item">Trade-in</li>						
+			<ul class="row plus_list">
+				<li type="button" href="#form_8" class="plus_item">Материнский капитал</li>						
+				<li type="button" href="#form_8" class="plus_item">Ипотека</li>						
+				<li type="button" href="#form_8" class="plus_item">Рассрочка 0%</li>						
+				<li type="button" href="#form_8" class="plus_item">Скидка 2%</li>						
+				<li type="button" href="#form_8" class="plus_item">Программа <br>без первоначального взноса</li>						
+				<li type="button" href="#form_8" class="plus_item">Trade-in</li>						
 			</ul>
 		</div>
 	</section>
@@ -501,6 +521,28 @@
 		</form>
 	</div>
 
+	<!-- Форма "Сбор информации" (блок "Стоимость") -->
+	
+	<div id="form_8" class="form_popup mfp-hide">
+		<div class="title_wrap">
+			<div class="title_icon mail_form_icon"></div>
+			<h3 class="popup_form_title">Рассчитать стоимость</h3>
+		</div>
+		<form class="popup_form">
+			<input type="hidden" name="project_name" value="LP - Илиидиум 2">
+			<input type="hidden" name="form_subject" value="блок 'Стоимость'">
+			<p class="popup_form_desc">Для того чтобы рассчитать стоимость, необходимо заполнить следующие поля:</p>
+			<input class="popup_form_input" type="text" name="name" placeholder="ФИО" required />
+			<input class="popup_form_input" type="tel" name="tel" placeholder="Телефон" required />
+			<input class="popup_form_input" type="text" name="bezspama" style="display:none" value="" />
+			<div class="agree_wrap">
+				<input type="checkbox" name="agree" class="agree" id="agree8" />
+				<label class="agree_desc" for="agree">Я согласен на передачу персональных <br>данных. <a href="soglashenie.pdf" target="_blanc" class="agree_link">Соглашение</a></label>
+			</div>
+			<button class="submit popup_form_button continue" type="submit">Отправить</button>
+		</form>
+	</div>
+
 	<!-- Cards Zoom -->
 	<!-- Card 1 -->
 	<div class="card_zoom mfp-hide" id="card_1">
@@ -522,9 +564,16 @@
 				
 
 	<link rel="stylesheet" href="css/main.min.css">
+	<link rel="stylesheet" href="css/lightgallery.css">
 	<script src="js/scripts.min.js"></script>
+	<script src="js/lightgallery.min.js"></script>	
 	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 	<script type="text/javascript" src="//cdn.callbackhunter.com/cbh.js?hunter_code=ccd41e68833cdd328f000c9c796b2e43" charset="UTF-8"></script>
+	<script>
+		lightGallery(document.getElementById('lightgallery'), {
+			download: false
+		});
+	</script>
 
 </body>
 </html>
